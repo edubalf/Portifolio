@@ -1,55 +1,13 @@
 ﻿<div class="row">
-    <div class="col-sm-4">
-        <h3>Empório do aço (TreezeBit)</h3>
-        <div style="margin-top:-10px;">10/2015 ~ 06/2015</div>
+    <div class="col-sm-4" ng-repeat="Experiencia in Experiencias">
+        <h3>{{Experiencia.Empresa}}</h3>
+        <div style="margin-top:-10px;">{{Experiencia.Ate}} ~ {{Experiencia.De}}</div>
         <ul>
-            <li>
-                <h4>Programador</h4>
+            <li ng-repeat="Cargo in Experiencia.Cargos">
+                <h4>{{Cargo.Descricao}}</h4>
+                <div ng-show="Cargo.De" style="margin-top:-10px;">{{Cargo.Ate}} ~ {{Cargo.De}}</div>
                 <ul>
-                    <li>Desenvolvimento de sistema mobile com Xamarin</li>
-                    <li>Desenvolvimento de sistema desktop com WPF</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="col-sm-4">
-        <h3>Fácil Assist</h3>
-        <div style="margin-top:-10px;">05/2015 ~ 10/2014</div>
-        <ul>
-            <li>
-                <h4>Programador</h4>
-                <ul>
-                    <li>Robos com Windows Service</li>
-                    <li>Modelagem de dados e criação de procedures com SQL Server</li>
-                    <li>Criação de WebServices com WCF</li>
-                    <li>Desenvolvimento de sistemas web com WebForms e MVC</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="col-sm-4">
-        <h3>SBS e-BPO</h3>
-        <div style="margin-top:-10px;">09/2014 ~ 01/2013</div>
-        <ul>
-            <li>
-                <h4>Programador</h4>
-                <div style="margin-top:-10px;">09/2014 ~ 07/2013</div>
-                <ul>
-                    <li>Desenvolvimento de sistemas desktop com Windows Forms</li>
-                    <li>Robos com Windows Service e Console Application</li>
-                    <li>Desenvolvimento de sistemas web com WebForms</li>
-                    <li>Modelagem de dados e criação de procedures com SQL Server</li>
-                </ul>
-            </li>
-            <li>
-                <h4>Assistente de TI</h4>
-                <div style="margin-top:-10px;">07/2013 ~ 01/2013</div>
-                <ul>
-                    <li>Manutenção de maquina</li>
-                    <li>Rotina de backup</li>
-                    <li>Manutenção de servidores</li>
-                    <li>Manutenção no sistema</li>
-                    <li>Manutenção no banco de dados</li>
+                    <li ng-repeat="Funcao in Cargo.Funcoes">{{Funcao}}</li>
                 </ul>
             </li>
         </ul>

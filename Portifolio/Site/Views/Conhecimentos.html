@@ -14,45 +14,10 @@
     <img class="col-sm-2" src="">
 </div>-->
 <div class="row">
-    <div class="col-sm-4">
-        <h3>Front-end</h3>
+    <div class="col-sm-4" ng-repeat="Conhecimento in Conhecimentos">
+        <h3>{{Conhecimento.Descricao}}</h3>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>BootStrap</li>
-            <li>Angular</li>
-            <li>Bower</li>
-            <li>Gulp</li>
-            <li>Slush</li>
-        </ul>
-    </div>
-    <div class="col-sm-4">
-        <h3>Back-end</h3>
-        <ul>
-            <li>C#</li>
-            <li>Windows Forms</li>
-            <li>WCF</li>
-            <li>WPF</li>
-            <li>Console Aplications</li>
-            <li>Windows Services</li>
-            <li>.NET WebForms</li>
-            <li>.NET MVC</li>
-            <li>.NET WEB API</li>
-            <li>ADO.NET</li>
-            <li>Entity Framework</li>
-            <li>SQL Server</li>
-            <li>Node.js (básico)</li>
-            <li>Mongoose (básico)</li>
-            <li>MongoDB (básico)</li>
-        </ul>
-    </div>
-    <div class="col-sm-4">
-        <h3>Outros</h3>
-        <ul>
-            <li>DDD</li>
-            <li>Xamarin Forms</li>
-            <li>REST</li>
+            <li ng-repeat="Item in Conhecimento.Itens">{{Item}}</li>
         </ul>
     </div>
 </div>

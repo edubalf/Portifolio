@@ -77,6 +77,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\app.js" />
+    <Content Include="Controllers\Conhecimentos.js" />
+    <Content Include="Controllers\Eventos.js" />
+    <Content Include="Controllers\Experiencias.js" />
+    <Content Include="Controllers\Formacoes.js" />
     <Content Include="Index.html" />
     <Content Include="style.css" />
     <Content Include="Views\Conhecimentos.html" />
@@ -88,9 +92,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
